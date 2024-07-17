@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambers Food Website</title>
+
+
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="checkout.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+
+    <!-- icons -->
+
+</head>
+
+
+<body>
+
+    <div class="blog-list-header slide-fade-up">
+        <img src="../IMAGE/LOGO/banner.png" alt="Banner" class="banner-image">
+        <div class="header-content">
+
+            <h1>Checkout Page</h1>
+
+        </div>
+    </div>
+    
+
+        <main>
+
+            <div class="checkout-container">
+                <div class="main-content">
+                    <form class="shipping-form">
+                        <h2>Shipping Address</h2>
+                        <div class="form-groupp">
+                            <div class="form-field">
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            <div class="form-field">
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                        </div>
+                        <div class="form-groupp">
+                            <div class="form-field">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-groupp">
+                            <div class="form-field">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-field">
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="">Choose country</option>
+                                    <!-- Add country options here -->
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-groupp">
+                            <div class="form-field">
+                                <label for="city">City</label>
+                                <select id="city" name="city">
+                                    <option value="">Choose city</option>
+                                    <!-- Add city options here -->
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="zip">Zip code</label>
+                                <input type="text" id="zip" name="zip">
+                            </div>
+                        </div>
+
+                        <div class="form-groupp">
+                            <div class="form-field">
+                                <label for="address1">Address 1</label>
+                                <input type="text" id="address1" name="address1">
+                            </div>
+                            <div class="form-field">
+                                <label for="address2">Address 2</label>
+                                <input type="text" id="address2" name="address2">
+                            </div>
+                        </div>
+
+                        <div class="billing-h3">
+
+                            <h3>Billing Address</h3>
+                        </div>
+
+
+                        <div class="billing-address">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="same-as-shipping" name="same-as-shipping">
+                            </div>
+                            <div class="label-container">
+                                <label for="same-as-shipping">Same as shipping address</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-actions">
+                            <a href="../index.html" class="back-button">
+                                <ion-icon name="arrow-back"></ion-icon>
+                                Back to Home
+                            </a>
+                            
+                            <button type="submit" class="proceed-button">
+                                Proceed to shipping
+                                <ion-icon name="arrow-forward"></ion-icon>
+                            </button>
+                        </div>
+                        
+                    </form>
+
+
+                    <div class="order-summary">
+                        <div class="item">
+                            <img src="../IMAGE/REMOVEBG/image 27.png" alt="Chicken Tikka Kabab">
+                            <div class="item-details">
+                                <h3>Hotatay Soup</h3>
+                                <p>It combines tender chicken, succulent shrimp, and a medley of fresh vegetables in a flavorful broth. </p>
+                                <p><b> ₱467 </b></p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../IMAGE/REMOVEBG/Pancit_trio-removebg-preview.png" alt="Chicken Tikka Kabab">
+                            <div class="item-details">
+                                <h3>Original Pancit Trio</h3>
+                                <p>Choose any three combinations from our wide selection, including classics like Canton, Bihon, Miki, Sotanghon, and even Spaghetti. </p>
+                                <p><b> ₱467 </b></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" alt="Chicken Tikka Kabab">
+                            <div class="item-details">
+                                <h3>Buttered Fried Chicken</h3>
+                                <p>Each piece is coated in a special batter and fried to a golden crisp, locking in the juicy, tender meat inside. </p>
+                                <p><b> ₱467 </b></p>
+                            </div>
+                        </div>
+
+
+                        <div class="summary">
+
+                            <div class = "summary-p"> <p><span>Sub-total</span> <span>₱ 1400.00</span></p></div>
+                         
+                            <p><span>Standard Delivery</span> <span>₱ 59.00</span></p>
+                            <p><span>Discount</span> <span>5%</span></p>
+                            <h2><span>Total</span> <span>₱ 1,386.05</span></h2>
+                            <button type="button">Place an order <ion-icon name="arrow-round-forward"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- ----------- -->
+
+
+
+
+    </div>
+
+    <!-- I DONT PURPOSE -->
+
+    <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn
+        style="opacity: 0.1; pointer-events: none; background-color: rgba(0, 0, 0, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+        <ion-icon name="radio-button-off"></ion-icon> </button>
+    <button class="slider-btn next" aria-label="slide to next" data-next-btn
+        style="opacity: 0.1; pointer-events: none; background-color: rgba(255, 255, 255, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+    </button>
+    </main>
+
+
+
+
+    <!-- custom js link  -->
+
+    <script src="../script.js"> </script>
+
+    <!--- ionicon link-->
+
+
+
+</body>
+
+
+
+</html>

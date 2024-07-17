@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambers Food Website</title>
+
+
+    <link rel="stylesheet" href="index.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+
+<body id="top">
+
+   
+
+    <div class="container">
+
+        
+        <!--- #HEADER -->
+        <header class="header" data-header>
+
+            <nav class="navbar visible">
+                <div class="navbar-wrapper">
+                    <a href="#" class="logo">
+                        <img src="IMAGE/LOGO/amber-logo.png" alt="logo">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="active">
+                            <a href="#home" class="nav-link">Home</a>
+
+                        <li>
+                            <a href="AboutUsPage/About.html" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="OurMenuPage/menu.html" class="nav-link">Our Menu</a>
+                        </li>
+                        <li>
+                            <a href="CommunityPage/community.html" class="nav-link">Community</a>
+                        </li>
+                        <li>
+                            <a href="Contact/Contact.html" class="nav-link">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+
+
+                    <!-- Sign Up Form Pane -->
+
+                    <div class="navbar-btn-group">
+                        <button class="shopping-cart-btn2">
+                            <img src="IMAGE/LOGO/image%203.png" alt="shopping cart icon" width="40" style="margin-left: 20px;">
+                        </button>
+                        <button class="menu-toggle-btn"></button>
+                    </div>
+                    
+                    <div class="sign-up-pane" id="create-account-pane">
+                        <div class="sign-up-box">
+                            <img src="IMAGE/LOGO/amber-logo.png" alt="Amber Logo" width="150">
+                            <form class="sign-up-form" id="create-account-form">
+                                <h4>Create your Account</h4>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <div class="input-container">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <input type="text" id="username" name="username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <div class="input-container">
+                                        <ion-icon name="location-outline"></ion-icon>
+                                        <input type="text" id="address" name="address" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="input-container">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile Number</label>
+                                    <div class="input-container">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                        <input type="text" id="mobile" name="mobile" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-container">
+                                        <ion-icon name="eye"></ion-icon>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_password">Confirm Password</label>
+                                    <div class="input-container">
+                                        <ion-icon name="eye-off"></ion-icon>
+                                        <input type="password" id="confirm_password" name="confirm_password" required>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="custom-btn3" onclick="showWelcomeBackPane()">
+                                    <span class="text text-1">Sign In</span>
+                                    <span class="text text-2" aria-hidden="true">Sign In</span>
+                                </button>
+
+
+                                <div class="alternative-signup">
+                                    <button class="btn btn-google">
+                                        <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="sign-up-pane" id="welcome-back-pane">
+                        <div class="sign-up-box">
+                            <div class="sign-header">
+
+                                <button onclick="showCreateAccountPane()">←</button>
+                                <h2>Welcome back!</h2>
+                            </div>
+                            <form class="sign-up-form" id="sign-in-form">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <div class="input-container">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <input type="text" id="username" name="username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-container">
+                                        <ion-icon name="eye-off"></ion-icon>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="custom-btn3" onclick="signIn()">
+                                    <span class="text text-1">Log In</span>
+                                    <span class="text text-2" aria-hidden="true">Log In</span>
+                                </button>
+
+                                <div class="alternative-signup">
+                                    <button class="btn btn-google">
+                                        <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                    </button>
+                               
+
+                                <p>Don’t have an account?</p>
+                                <p>
+                                    Forgot your password?
+                                </p>
+                                
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+
+                    <!-- VIEW YOUR CART------->
+
+
+                    <button class="shopping-cart-btn">
+                        <img src="IMAGE/LOGO/Group%20242-2.jpg" alt="shopping cart icon" width="53">
+                    </button>
+
+                    <button class="menu-toggle-btn">
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="cart-box">
+                <div class="cart-header">
+                    <button onclick="goBack()">←</button>
+                    <h2>Your cart</h2>
+                </div>
+
+
+                <div class="cart-empty" id="cart-empty">
+                    <img src="IMAGE/LOGO/yourcart.png" alt="Cart Image">
+
+                    <h4>Hungry?</h4>
+                    <p>You haven't added anything to your cart!</p>
+                    <button onclick="addItem()">Add one</button>
+                </div>
+
+                <div class="cart-filled" id="cart-filled" style="display: none;">
+                    <div class="cart-itemm">
+
+                        <img src="IMAGE/REMOVEBG/image 27.png" alt="Hotatay Soup">
+                        <div>
+                            <h3>Hotatay soup</h3>
+                            <p>Delight in the savory goodness of our Hotatay Soup, a rich and hearty blend of fresh ingredients. Perfectly crafted to warm your soul </p>
+                        </div>
+
+                        <select class="select-red">
+                            <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                        </select>
+                    </div>
+
+                    <div class="cart-itemm">
+
+                        <img src="IMAGE/REMOVEBG/Pancit_trio-removebg-preview.png" alt="Hotatay Soup">
+                        <div>
+                            <h3>Original Pancit Trio </h3>
+                            <p>Choose any three combinations from our wide selection, including classics like Canton,
+                                Bihon, Miki, Sotanghon, and even Spaghetti.</p>
+                        </div>
+
+                        <select class="select-red">
+                            <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                        </select>
+
+                    </div>
+
+                    <div class="cart-itemm">
+
+                        <img src="IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" alt="Hotatay Soup">
+                        <div>
+                            <h3>Buttered Fried Chicken</h3>
+                            <p>Each bite offers a crispy exterior and a juicy, flavorful interior, all enhanced by a rich buttery finish that makes this dish simply irresistible.</p>
+                        </div>
+
+                        <select class="select-red">
+                            <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                        </select>
+
+
+                    </div>
+
+
+                    <div class="cart-btn-group">
+                        <div class="summary-row">
+                            <p class="summary-label"><strong>Subtotal:</strong></p>
+                            <p class="summary-price">₱1,400.00</p>
+                        </div>
+                        <div class="summary-row">
+                            <p class="summary-label">Standard delivery:</p>
+                            <p class="summary-price">₱59.00</p>
+                        </div>
+                      <a href="CheckoutPage/checkout.html" class="review-button">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                        Review payment and address
+                    </a>
+                        
+                                            </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        
+</header>
+
+        <main>
+
+
+            <!-- #HOME SECTION -->
+
+            <section class="hero text-center" id="home" aria-label="home">
+                <ul>
+
+                    <li class="slider-item active" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="IMAGE/APPETIZER/Cheese Sticks.jpg" width="1880" height="950" alt=""
+                                class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Enjoy our</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Traditional Filipino Food
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Come and experience the joy of a Filipino feast with us.<br>
+                            Our warm hospitality and authentic flavors welcome you to a culinary journey filled with
+                            nostalgia and delight. </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+                    </li>
+
+
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="IMAGE/BEEF/Morcon.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Come and Savor</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Authentic Filipino Flavors
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            At Amber's, we specialize in Filipino comfort food that warms the soul. <br>From hearty
+                            sinigangs to crispy lumpiang shanghai, our menu is a comforting embrace of familiar flavors.
+                        </p>
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="IMAGE/PANCIT/Bihon Guisado Top 0182.jpg" width="1880" height="950" alt=""
+                                class="img-cover">
+                        </div>
+
+
+                        <p class="label-2 section-subtitle slider-reveal">Taste</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Loved all by the Filipinos
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Immerse yourself in the rich heritage of Filipino <br>culinary traditions at Amber's. Each
+                            dish is a testament to time-honored recipes passed down through generations. </p>
+                        <a href="#" class="btn slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="arrow-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+
+            </section>
+        </main>
+
+        <!-- ABOUT CONTENT -->
+
+        <section class="about container-about" id="about">
+
+            <div class="about-left">
+
+                <div class="img-box">
+                    <img src="IMAGE/LOGO/Group 246.png" alt="about image" class="about-img">
+                </div>
+
+                <div class="abs-content-box">
+                    <div class="dotted-border">
+                        <p class="number-lg">36</p>
+                        <p class="text-md">Years <br> in the Making</p>
+                    </div>
+                </div>
+
+                <img src="IMAGE/LOGO/circle.svg" alt="circle shape" class="shape shape-6" width="60">
+                <img src="IMAGE/LOGO/circle.svg" alt="circle shape" class="shape shape-7" width="70">
+                <img src="IMAGE/LOGO/circle.svg" alt="circle shape" class="shape shape-8" width="1200">
+                <img src="IMAGE/LOGO/circle.svg" alt="circle shape" class="shape shape-20" width="1200">
+
+                <img src="IMAGE/LOGO/ring.svg" alt="ring shape" class="shape shape-9" width="80">
+                <img src="IMAGE/LOGO/ring.svg" alt="ring shape" class="shape shape-10" width="80">
+
+            </div>
+
+            <div class="about-right">
+
+
+                <h2 class="about-title">DISCOVER OUR STORY</h2><br>
+
+
+                <h2 class="about-title2">Home of the Famous Pancit Malabon</h2>
+
+                <div class="bestdish-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+
+                    <br> <br> <br>
+
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <br> <br> <br>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+
+
+                </div>
+
+
+                <p class="about-text">
+
+                    Amber's Philippines is a renowned culinary
+                    destination known for its rich heritage in Filipino cuisine.
+                    Established in 1988, we have been delighting taste buds for over three decades with our authentic
+                    flavors and warm hospitality. Our tagline, "Home of the Famous Pancit Malabon," embodies our
+                    dedication to showcasing beloved Filipino dishes prepared with the finest ingredients and
+                    traditional recipes.
+
+
+                </p>
+
+                <p class="about-text">
+                    Join us on a culinary journey filled with nostalgia, delicious memories, and the vibrant flavors of
+                    the Philippines. Whether you're craving classic favorites or exploring new culinary adventures,
+                    Amber's Philippines welcomes you to savor the true taste of Filipino cuisine.
+
+                </p>
+
+                <a href="#" class="custom-btn">
+                    <span class="text text-1">Read More</span>
+                    <span class="text text-2" aria-hidden="true">Read More</span>
+                </a>
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- - #FEATURES-->
+
+
+        <section class="section features container-features text-center" aria-label="features">
+
+            <p class="section-subtitle label-2">WHY CHOOSE US</p>
+
+            <h2 class="sectiontitle">Our Strength</h2>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-card">
+
+                        <div class="card-icon">
+                            <img src="IMAGE/REMOVEBG/restaurant copy.png" width="100" height="80" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                        <p class="label-1 card-text">At Amber's PH, we prioritize hygiene in every aspect of our food
+                            preparation. From sourcing fresh ingredients to maintaining
+                            clean cooking environments.</p>
+
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-card">
+
+                        <div class="card-icon">
+                            <img src="IMAGE/REMOVEBG/vegetable.png" width="100" height="80" loading="lazy" alt="icon">
+                        </div>
+
+                        <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                        <p class="label-1 card-text">We believe that the key to great food lies in using fresh,
+                            high-quality ingredients. That's why we source our ingredients carefully, ensuring that each
+                            dish is bursting with flavor and nutritional value.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-card">
+
+                        <div class="card-icon">
+                            <img src="IMAGE/REMOVEBG/restaurant.png" width="100" height="80" loading="lazy" alt="icon">
+                        </div>
+
+                        <h3 class="title-2 card-title">Expert Chefs</h3>
+
+                        <p class="label-1 card-text">Our team of skilled chefs brings culinary expertise and passion to
+                            every dish. With years of experience and a flair for innovation, they craft mouthwatering
+                            creations that cater to diverse tastes.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-card">
+
+                        <div class="card-icon">
+                            <img src="IMAGE/REMOVEBG/review.png" width="100" height="80" loading="lazy" alt="icon">
+                        </div>
+
+                        <h3 class="title-2 card-title">Customer Satisfaction</h3>
+
+                        <p class="label-1 card-text">At Amber's PH, customer satisfaction is our priority. We go above
+                            and beyond to ensure that every customer receives
+                            not just great food but also exceptional service.
+                            From prompt deliveries to personalized experiences, we strive to delight our customers. </p>
+
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+        </section>
+
+
+ 
+
+
+        <!-- BEST DISHES -->
+
+
+        <section class="section service container-bestdishes text-center" id="bestdishes">
+
+            <p class="dishes-subtitle">EXPLORE OUR BEST DISHES</p>
+            <div class="bestdish-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+
+                <br>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+
+
+            </div>
+
+
+            <h2 class="label-bestdishes">Array of Culinary <br> Amber Delights</h2>
+
+            <div class="bestdish-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+
+                <br>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+
+
+            </div>
+
+            <p class="dishes-sub2">
+                Ambers Philippines offers an array of culinary delights <br>that showcase the best of Filipino cuisine.
+                <br>Each dish is crafted with the finest ingredients <br>and utmost care to bring you an unforgettable
+                <br>dining experience.
+            </p>
+
+            <ul class="grid-list">
+                <li>
+                    <div class="service-card">
+                        <a href="#" class="has-before hover:shine">
+                            <figure class="card-banner img-holder">
+                                <img src="IMAGE/CHICKEN/Buttered Fried Chicken.jpg" width="285" height="336"
+                                    loading="lazy" alt="Buttered Fried Chicken" class="img-cover">
+                            </figure>
+                        </a>
+                        <div class="card-content">
+                            <h3 class="title-4 card-title"><a href="#">Buttered Fried Chicken</a></h3>
+                            <p>Golden crispy, tender & juicy, full of flavor. a classic favorite that's crispy on the
+                                outside and tender on the inside. Perfectly seasoned and fried to golden perfection</p>
+                            <a href="#" class="custom-btn2">
+                                <span class="text text-1">View our Menu</span>
+                                <span class="text text-2" aria-hidden="true">View our Menu</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="service-card">
+                        <a href="#" class="has-before hover:shine">
+                            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                <img src="IMAGE/DESSERT/Pichi Cheese.jpg" width="285" height="336" loading="lazy"
+                                    alt="Pichi Pichi with Cheese" class="img-cover">
+                            </figure>
+                        </a>
+
+                        <div class="card-content">
+                            <h3 class="title-4 card-title">
+                                <a href="#">Pichi Pichi with Cheese</a>
+                            </h3>
+
+                            <p>Delight in the sweet and chewy texture of Pichi Pichi, topped with creamy cheese. This
+                                classic Filipino appetizer is perfect for whetting your appetite and is loved by all
+                                ages.</p>
+
+                            <a href="#" class="custom-btn2">
+                                <span class="text text-1">View our Menu</span>
+                                <span class="text text-2" aria-hidden="true">View our Menu</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <div class="service-card">
+                        <a href="#" class="has-before hover:shine">
+                            <figure class="card-banner img-holder">
+                                <img src="IMAGE/PANCIT/Original Pancit Malabon.jpg" width="285" height="336"
+                                    loading="lazy" alt="Pineapple Pandan Punch" class="img-cover">
+                            </figure>
+                        </a>
+                        <div class="card-content">
+                            <h3 class="title-4 card-title"><a href="#">Pancit Malabon</a></h3>
+                            <p> Pancit Malabon is made with thick rice noodles that absorb the rich flavors of the
+                                sauce, giving the dish a satisfying texture and taste.
+                                .This dish is lavishly topped with a variety of ingredients, including boiled shrimp,
+                                squid and etc.
+
+
+
+                            </p>
+                            <a href="#" class="custom-btn2">
+                                <span class="text text-1">View our Menu</span>
+                                <span class="text text-2" aria-hidden="true">View our Menu</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <img src="IMAGE/REMOVEBG/Siomai-Photoroom.png" width="246" height="212" loading="lazy" alt="shape"
+                class="shape bestdish-shape1 move-anim">
+
+            <img src="IMAGE/REMOVEBG/Sweet and Sour Fish-Photoroom.png" width="246" height="212" loading="lazy"
+                alt="shape" class="shape bestdish-shape19 move-anim">
+
+            <img src="IMAGE/REMOVEBG/Sotanghon Gui-Photoroom.png" width="243" height="245" loading="lazy" alt="shape"
+                class="shape bestdish-shape2 move-anim">
+
+                <img src="IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" width="343" height="245"
+                loading="lazy" alt="shape" class="shape bestdish-shape20 move-anim">
+
+                <img src="IMAGE/REMOVEBG/Siomai-Photoroom.png" width="283" height="245"
+                loading="lazy" alt="shape" class="shape bestdish-shape21 move-anim">
+
+                <img src="IMAGE/REMOVEBG/image 27.png" width="273" height="245"
+                loading="lazy" alt="shape" class="shape bestdish-shape22 move-anim">
+
+                <img src="IMAGE/REMOVEBG/Pichi_Cheese-removebg-preview.png" width="346" height="312" loading="lazy"
+                    alt="shape" class="shape bestdish-shape23 move-anim">
+
+                 <!-- <img src="IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" width="343" height="245"
+                    loading="lazy" alt="shape" class="shape bestdish-shape24 move-anim"> -->
+
+        
+        </section>    
+
+
+        <!-- TESTIMONIALS -->
+
+        <section class="testimonials container-testimonial" id="testimonials">
+
+
+            <h2 class="section-title">TESTIMONIALS FROM CUSTOMERS</h2>
+
+            <p class="section-text">
+                Customer Feedback
+            </p>
+
+            <div class="testimonials-grid">
+
+                <div class="testimonials-card">
+
+                    <h4 class="card-title">Delicious Meals Every Time</h4>
+
+                    <div class="testimonials-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="testimonials-text">
+                        One thing that stands out about Amber's PH Delivery is their commitment to fast and reliable
+                        service.
+                        Living in a bustling city, I appreciate how they always manage to deliver my order promptly,
+                        even during peak hours. The delivery personnel are courteous and go the extra mile to ensure a
+                        pleasant experience every time.
+
+
+                    </p>
+
+                    <div class="customer-info">
+                        <div class="customer-img-box">
+                            <img src="IMAGE/346097600_1433095700766504_1371482595178150827_n.jpg" alt="customer image"
+                                class="customer-img" width="100" loading="lazy">
+                        </div>
+
+                        <h5 class="customer-name">Justine Polintan</h5>
+                    </div>
+
+                </div>
+
+                <div class="testimonials-card">
+
+                    <h4 class="card-title">Fast and Reliable Service</h4>
+
+                    <div class="testimonials-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="testimonials-text">
+                        What sets Amber's apart is their incredible variety of dishes.
+                        From classic comfort foods to exotic cuisines, there's something for every palate.
+                        I've had the pleasure of trying dishes from different cuisines, and each one has been a
+                        delightful journey of flavors.
+                        It's like having a world tour of food delivered to your doorstep!
+
+
+                    </p>
+
+                    <div class="customer-info">
+                        <div class="customer-img-box">
+                            <img src="IMAGE/429081751_958222445872117_984972070937586370_n.jpg" alt="customer image"
+                                class="customer-img" width="200" loading="lazy">
+                        </div>
+
+                        <h5 class="customer-name">John Emmanuel Casingal</h5>
+                    </div>
+
+                </div>
+
+                <div class="testimonials-card">
+
+                    <h4 class="card-title">Excellent Variety of Dishes</h4>
+
+                    <div class="testimonials-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="testimonials-text">
+                        It never fails to impress! I've been a loyal customer for over a year now, and I can confidently
+                        say that their meals are consistently top-notch. Whether it's their signature dishes or seasonal
+                        specials, every bite is a burst of flavor that keeps me coming back for more.
+                    </p>
+
+                    <div class="customer-info">
+                        <div class="customer-img-box">
+                            <img src="IMAGE/SANTIAGO_IDPicture.jpg" alt="customer image" class="customer-img"
+                                width="100" loading="lazy">
+                        </div>
+
+                        <h5 class="customer-name">Kit Nicholas Santiago</h5>
+                    </div>
+
+                </div>
+
+                <div class="testimonials-card">
+
+                    <h4 class="card-title">Great Value for Money</h4>
+
+                    <div class="testimonials-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="testimonials-text">
+                        In addition to their mouthwatering dishes, Amber's PH Delivery offers great value for money. The
+                        portion sizes are generous, ensuring you get a satisfying meal every time. I've compared their
+                        prices with other delivery services, and they consistently offer competitive rates without
+                        compromising on quality. It's a win-win for your taste buds and your wallet!
+
+
+                    </p>
+
+                    <div class="customer-info">
+                        <div class="customer-img-box">
+                            <img src="IMAGE/317710248_1289446081625982_2836201342063767569_n.jpg" alt="customer image"
+                                class="customer-img" width="300px" height="200px" loading="lazy">
+                        </div>
+
+                        <h5 class="customer-name">Jhon Marlou Tobello</h5>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <img src="IMAGE/testimonial-bg.jpg" alt="" class="reservation-background">
+
+        <!-- - #RESERVATION-->
+
+      
+        <section class="reservation">
+
+            <div class="container-reservation">
+
+                <div class="form reservation-form bg-white-10">
+
+                    <form action="" class="form-left">
+
+                        <h2 class="headline-1 text-center">Online Delivery</h2>
+
+
+                        <p class="form-text text-center">
+                            Any where, anytime enjoy your desire food. <br> <a href="tel:+88123123456" class="link">
+                                09098-8888 or 8-88488</a>
+                            or fill out the order form
+                        </p>
+
+
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Your Name" autocomplete="off"
+                                class="input-field">
+
+                            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off"
+                                class="input-field">
+                        </div>
+
+
+
+                        <div class="input-wrapper">
+
+                            <div class="icon-wrapper">
+                                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                                <select name="person" class="input-field">
+                                    <option value="1-person">1 Person</option>
+                                    <option value="2-person">2 Person</option>
+                                    <option value="3-person">3 Person</option>
+                                    <option value="4-person">4 Person</option>
+                                    <option value="5-person">5 Person</option>
+                                    <option value="6-person">6 Person</option>
+                                    <option value="7-person">7 Person</option>
+                                </select>
+
+                                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                            </div>
+
+                            <div class="icon-wrapper">
+                                <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                                <input type="date" name="reservation-date" class="input-field">
+
+                                <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+                            </div>
+
+                            <div class="icon-wrapper">
+                                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                <select name="person" class="input-field">
+                                    <option value="08:00am">08 : 00 am</option>
+                                    <option value="09:00am">09 : 00 am</option>
+                                    <option value="010:00am">10 : 00 am</option>
+                                    <option value="011:00am">11 : 00 am</option>
+                                    <option value="012:00am">12 : 00 am</option>
+                                    <option value="01:00pm">01 : 00 pm</option>
+                                    <option value="02:00pm">02 : 00 pm</option>
+                                    <option value="03:00pm">03 : 00 pm</option>
+                                    <option value="04:00pm">04 : 00 pm</option>
+                                    <option value="05:00pm">05 : 00 pm</option>
+                                    <option value="06:00pm">06 : 00 pm</option>
+                                    <option value="07:00pm">07 : 00 pm</option>
+                                    <option value="08:00pm">08 : 00 pm</option>
+                                    <option value="09:00pm">09 : 00 pm</option>
+                                    <option value="10:00pm">10 : 00 pm</option>
+                                </select>
+
+                                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                            </div>
+
+                        </div>
+
+                        <textarea name="message" placeholder="Message" autocomplete="off"
+                            class="input-field"></textarea>
+
+
+                        <button type="submit" class="custom-btn2">
+                            <span class="text text-1">Order Now</span>
+                            <span class="text text-2" aria-hidden="true">Order Now</span>
+                        </button>
+                
+
+                    </form>
+
+                    <div class="form-right text-center"
+                        style="background-image: url('IMAGE/LOGO/form-pattern\ 1.png');">
+                        <hr class="section-divider">
+
+                        <h2 class="headline-1 text-center">Contact Us</h2>
+
+
+                        <p class="contact-label">Website and Phone</p>
+
+                        <a href="tel:+88123123456" class="body-1 contact-number hover-underline">09098-8888 or 8-88488
+                            <br>ambers.com.ph</a>
+
+                        <div class="separator"></div>
+
+                        <p class="contact-label">Location</p>
+
+                        <address class="body-4">
+                            1324 Filmore St 1225 Makati, Philippines
+                        </address>
+                        <div class="separator"></div>
+
+
+                        <p class="contact-label">Operation Time Hours</p>
+
+                        <p class="body-4">
+                            Monday to Sunday <br>
+                            11.00 am - 2.30pm
+                        </p>
+                        <div class="separator"></div>
+
+
+                        <p class="contact-label">For Laguna and <br> Cavite Branch</p>
+
+                        <p class="body-4">
+                            Monday to Sunday <br>
+                            05.00 pm - 10.00pm
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- FOOTER -->
+
+
+
+<footer id="contact">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Catering</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+                <h3>
+                    <ion-icon name="time-outline"></ion-icon>
+                    Opening Hours
+                </h3>
+                <ul>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                </ul>
+            </div>
+
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon> Facebook</a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon> Instagram</a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon> Twitter</a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Amber.com.ph</p>
+            <p>09098-8888</p>
+            <p>8-88488</p>
+        </div>
+        <div class="footer-section">
+            <h3>Our Location</h3>
+            <img src="../asset/image/Maps.png" alt="Location Map">
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+
+    <!-- custom js link  -->
+
+    <script src="script.js"> </script>
+
+    <!--- ionicon link-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+
+</html>

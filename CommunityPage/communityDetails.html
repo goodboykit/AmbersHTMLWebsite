@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambers Food Website</title>
+
+
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="communityDetails.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header class="header" data-header>
+            <nav class="navbar visible">
+                <div class="navbar-wrapper">
+                    <a href="#" class="logo">
+                        <img src="../IMAGE/LOGO/amber-logo.png" alt="logo">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="../AboutUsPage/About.html" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="../OurMenuPage/menu.html" class="nav-link">Our Menu</a>
+                        </li>
+                        <li class="active">
+                            <a href="../CommunityPage/community.html" class="nav-link">Community</a>
+                        </li>
+                        <li>
+                            <a href="../Contact/Contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+
+                    <!-- Sign Up Form Pane -->
+
+                    <div class="navbar-btn-group">
+                        <button class="shopping-cart-btn2">
+                            <img src="../IMAGE/LOGO/image%203.png" alt="shopping cart icon" width="40"
+                                style="margin-left: 20px;">
+                        </button>
+                        <button class="menu-toggle-btn"></button>
+                    </div>
+
+                    <div class="sign-up-pane" id="create-account-pane">
+                        <div class="sign-up-box">
+                            <img src="../IMAGE/LOGO/amber-logo.png" alt="Amber Logo" width="150">
+                            <form class="sign-up-form" id="create-account-form">
+                                <h4>Create your Account</h4>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <div class="input-container">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <input type="text" id="username" name="username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <div class="input-container">
+                                        <ion-icon name="location-outline"></ion-icon>
+                                        <input type="text" id="address" name="address" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="input-container">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile Number</label>
+                                    <div class="input-container">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                        <input type="text" id="mobile" name="mobile" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-container">
+                                        <ion-icon name="eye"></ion-icon>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_password">Confirm Password</label>
+                                    <div class="input-container">
+                                        <ion-icon name="eye-off"></ion-icon>
+                                        <input type="password" id="confirm_password" name="confirm_password" required>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="custom-btn3" onclick="showWelcomeBackPane()">
+                                    <span class="text text-1">Sign In</span>
+                                    <span class="text text-2" aria-hidden="true">Sign In</span>
+                                </button>
+
+
+                                <div class="alternative-signup">
+                                    <button class="btn btn-google">
+                                        <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="sign-up-pane" id="welcome-back-pane">
+                        <div class="sign-up-box">
+                            <div class="sign-header">
+
+                                <button onclick="showCreateAccountPane()">←</button>
+                                <h2>Welcome back!</h2>
+                            </div>
+                            <form class="sign-up-form" id="sign-in-form">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <div class="input-container">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <input type="text" id="username" name="username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-container">
+                                        <ion-icon name="eye-off"></ion-icon>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="custom-btn3" onclick="signIn()">
+                                    <span class="text text-1">Log In</span>
+                                    <span class="text text-2" aria-hidden="true">Log In</span>
+                                </button>
+
+                                <div class="alternative-signup">
+                                    <button class="btn btn-google">
+                                        <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                    </button>
+
+
+                                    <p>Don’t have an account?</p>
+                                    <p>
+                                        Forgot your password?
+                                    </p>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
+                    
+                    
+                    
+                    <button class="shopping-cart-btn">
+                        <img src="../IMAGE/LOGO/Group%20242-2.jpg" alt="shopping cart icon" width="53">
+                    </button>
+
+                    <button class="menu-toggle-btn">
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="cart-box">
+                <div class="cart-header">
+                    <button onclick="goBack()">←</button>
+                    <h2>Your cart</h2>
+                </div>
+
+
+                <div class="cart-empty" id="cart-empty">
+                    <img src="../IMAGE/LOGO/yourcart.png" alt="Cart Image">
+
+                    <h4>Hungry?</h4>
+                    <p>You haven't added anything to your cart!</p>
+                    <button onclick="addItem()">Add one</button>
+                </div>
+
+                <div class="cart-filled" id="cart-filled" style="display: none;">
+                    <div class="cart-itemm">
+
+                        <img src="../IMAGE/REMOVEBG/image 27.png" alt="Hotatay Soup">
+                        <div>
+                            <h3>Hotatay soup</h3>
+                            <p>Delight in the savory goodness of our Hotatay Soup, a rich and hearty blend of fresh ingredients. Perfectly crafted to warm your soul </p>
+                        </div>
+
+                        <select class="select-red">
+                            <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                        </select>
+                    </div>
+
+                    <div class="cart-itemm">
+
+                        <img src="../IMAGE/REMOVEBG/Pancit_trio-removebg-preview.png" alt="Hotatay Soup">
+                        <div>
+                            <h3>Original Pancit Trio </h3>
+                            <p>Choose any three combinations from our wide selection, including classics like Canton,
+                                Bihon, Miki, Sotanghon, and even Spaghetti.</p>
+                        </div>
+
+                        <select class="select-red">
+                            <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                        </select>
+
+                    </div>
+
+                    <div class="cart-itemm">
+
+                        <img src="../IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" alt="Hotatay Soup">
+                        <div>
+                            <h3>Buttered Fried Chicken</h3>
+                            <p>Each bite offers a crispy exterior and a juicy, flavorful interior, all enhanced by a rich buttery finish that makes this dish simply irresistible.</p>
+                        </div>
+
+                        <select class="select-red">
+                            <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                            <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                        </select>
+
+
+                    </div>
+
+
+                    <div class="cart-btn-group">
+                        <div class="summary-row">
+                            <p class="summary-label"><strong>Subtotal:</strong></p>
+                            <p class="summary-price">₱1,400.00</p>
+                        </div>
+                        <div class="summary-row">
+                            <p class="summary-label">Standard delivery:</p>
+                            <p class="summary-price">₱59.00</p>
+                        </div>
+                        <button>Review payment and address</button>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PICTURE AND TEXT -->
+        <div class="blog-list-header slide-fade-up">
+            <img src="../IMAGE/LOGO/banner.png" alt="Banner" class="banner-image">
+            <div class="header-content">
+
+                <h1>Blog Details</h1>
+
+            </div>
+        </div>
+
+
+        <!-- BLOG DETAILS -->
+        <main>
+            <div class="containerr">
+
+                <div class="blog-list">
+
+                    <article class="blog-post zoom-in">
+
+                        <div class="image-container">
+                            <img src="../IMAGE/LOGO/PANCIT-MALABON_HEADER-1-1080x675.jpg" alt="Taco">
+                            <div class="post-date">
+                                <span class="date">14 February</span>
+                                <span class="month">2024</span>
+                            </div>
+                        </div>
+
+                        <div class="post-details">
+                            <h2>The Classic Pancit Malabon: A Filipino Favorite</h2>
+                            <p class="post-meta">
+                                <ion-icon name="calendar-outline"></ion-icon> Feb 14, 2024 |
+                                <ion-icon name="chatbubble-outline"></ion-icon> 53 |
+                                <ion-icon name="person-outline"></ion-icon> Cilla Adlawan
+                            </p>
+                            <p class="post-excerpt">Pancit Malabon is a renowned Filipino dish that captures the essence
+                                of traditional Filipino flavors. This savory delight has been a staple in Filipino
+                                households for generations, and Amber's has perfected this dish to bring you the most
+                                authentic and delectable Pancit Malabon experience. <br> <br> The unique blend of
+                                ingredients makes Pancit Malabon stand out among other pancit varieties. Each bite is an
+                                explosion of flavors that takes you on a culinary journey through the streets of
+                                Malabon, where this dish originated.
+
+
+
+                            </p>
+
+                            <blockquote class="custom-blockquote">
+                                <img src="../IMAGE/quote.png" class="quote-icon top" alt="Quote Icon">
+                                <p>
+                                    Amber's Pancit Malabon is not just a meal; it's a celebration of tradition and
+                                    taste. The thick rice noodles, generously coated in a rich, flavorful shrimp sauce,
+                                    create a delightful harmony with the vibrant mix of seafood, boiled eggs, and fresh
+                                    vegetables.
+                                </p>
+                                <img src="../IMAGE/quote.png" class="quote-icon bottom" alt="Quote Icon">
+                            </blockquote>
+
+                            <p>Pancit Malabon is not just a dish; it’s a symbol
+                                of Filipino culture and community. At Amber's,
+                                we ensure that every serving of Pancit Malabon brings the same warmth and joy that
+                                Filipino families have enjoyed for years.
+                                <br> Pancit Malabon has always been at the heart of Filipino gatherings. It's a dish
+                                that signifies togetherness and shared joy. At Amber's, we understand the importance of
+                                this cultural heritage and strive to make every plate a celebration of Filipino
+                                traditions.
+
+
+                            </p>
+
+                            <div class="image-content-wrapper">
+                                <img src="../IMAGE/PANCIT/Original Pancit Malabon.jpg" alt="Ramen Image" class="content-image">
+                                <div class="image-content-text">
+                                    <p> Whether it's a family gathering, a festive celebration, or just a simple meal at
+                                        home,
+                                        Amber's Pancit Malabon is perfect for any occasion. The hearty ingredients and
+                                        the rich taste make it a crowd favorite.
+                                        From the selection of the freshest seafood to the careful preparation of the
+                                        shrimp sauce, every step in making Amber's Pancit Malabon is done with utmost
+                                        care. This dedication to tradition and quality is what sets our Pancit Malabon
+                                        apart.
+
+
+
+                                    </p>
+
+                                    <br>
+
+                                    <p> From the selection of the freshest seafood
+                                        to the careful preparation of the shrimp sauce,
+                                        every step in making Amber's Pancit Malabon is done with utmost care.
+                                        This dedication to tradition and quality is what sets our Pancit Malabon
+                                        apart. We adhere to age-old recipes and techniques, passed down through
+                                        generations, to ensure that every bite is as authentic as possible.
+
+
+
+
+                                        When you see a plate of Pancit Malabon
+                                        from Amber's, you know you’re in for a treat. The beautiful presentation
+                                        is just a prelude to the delicious experience that awaits. It's a dish that
+                                        brings people together, fostering a sense of unity and togetherness and it is
+                                        always for a treatmake it a feast for all senses.
+
+
+
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"></div>
+
+
+                            <p> When you see a plate of Pancit Malabon from Amber's, you know you’re in for a treat. The
+                                beautiful presentation is just a prelude to the delicious experience that awaits. The
+                                vibrant hues of the seafood and vegetables are visually stunning, and the aromatic
+                                shrimp sauce tantalizes the senses, making the first bite an unforgettable experience.
+                            </p>
+                            <blockquote class="custom-blockquote">
+                                <img src="../IMAGE/quote.png" class="quote-icon top" alt="Quote Icon">
+                                <p>
+                                    The visual appeal of Amber's Pancit Malabon is as delightful
+                                    as its taste. The vibrant colors of the seafood and vegetables, combined with the
+                                    enticing aroma of the shrimp sauce, make it a feast for all senses.
+                                </p>
+                                <img src="../IMAGE/quote.png" class="quote-icon bottom" alt="Quote Icon">
+                            </blockquote>
+
+
+                            <p>At Amber's, we’re not just serving food; we’re sharing a piece of Filipino heritage. Our
+                                Pancit Malabon is more than a dish; it's a legacy that we proudly bring to your table.
+                                Amber’s Pancit Malabon is a culinary masterpiece that embodies the rich heritage of
+                                Filipino cuisine. From its humble origins in Malabon to becoming a beloved dish across
+                                the country, Pancit Malabon continues to bring joy to those who savor its flavors. At
+                                Amber’s, we are dedicated to keeping this tradition alive, one delicious plate at a
+                                time. <br> <br> When you see a plate of Pancit Malabon from Amber's, you know you’re in
+                                for a treat. The beautiful presentation is just a prelude to the delicious experience
+                                that awaits. The vibrant hues of the seafood and vegetables are visually stunning, and
+                                the aromatic shrimp sauce tantalizes the senses, making the first bite an unforgettable
+                                experience.
+
+
+
+                            </p>
+
+
+                            </p>
+
+
+                            <div class="tags-share-section">
+                                <div class="tags">
+                                    <span>Tags:</span>
+                                    <a href="#">Restaurant</a>
+                                    <a href="#">Dinner</a>
+                                    <a href="#">Pizza</a>
+                                    <a href="#">Yummy</a>
+                                </div>
+                                <div class="share">
+                                    <span>Share:</span>
+                                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                    <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+                                </div>
+                            </div>
+
+                            <div class="comments-section">
+
+                                <h2>Comments ( 3 )</h2>
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="../IMAGE/429081751_958222445872117_984972070937586370_n.jpg" alt="Author Image">
+                                        <div class="author-info">
+                                            <h4>Philip Casingal</h4>
+                                            <div class="date">
+                                                <ion-icon name="calendar"></ion-icon>
+                                                .       June 22, 2020
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>Oh wow, that is great! I've always loved Pancit Malabon. Amber's recipe looks delicious.</p>
+                                        <a href="#" class="reply-link">Reply</a>
+                                    </div>
+                                </div>
+
+                                <div class="comment reply">
+                                    <div class="comment-author">
+                                        <img src="../IMAGE/317710248_1289446081625982_2836201342063767569_n.jpg" alt="Author Image">
+                                        <div class="author-info">
+                                            <h4>Jhon Marlou Tobello</h4>
+                                            <div class="date">
+                                                <ion-icon name="calendar"></ion-icon>
+                                                .       June 22, 2020
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>Thank you, Philip! Amber's Pancit Malabon is indeed one of the best. The combination of thick rice noodles and the rich shrimp sauce makes it stand out. Have you tried making it at home?</p>
+                                        <a href="#" class="reply-link">Reply</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="../IMAGE/346097600_1433095700766504_1371482595178150827_n.jpg" alt="Author Image">
+                                        <div class="author-info">
+                                            <h4>Justine Polintan</h4>
+                                            <div class="date">
+                                                <ion-icon name="calendar"></ion-icon>
+                                                .       June 22, 2020
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>This post is fantastic. I appreciate the detailed explanation and the history behind Pancit Malabon. It’s fascinating how each ingredient adds to the overall flavor. I’m definitely going to try this recipe this weekend.</p>
+                                        <a href="#" class="reply-link">Reply</a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="comments-section">
+                                    <h2>Post a comment</h2>
+                                    <form>
+                                        <div class="form-row">
+                                            <input type="text" name="name" placeholder="Name" required>
+                                            <input type="email" name="email" placeholder="Email" required>
+                                        </div>
+                                        <textarea name="comment" placeholder="Write a comment" required></textarea>
+                                        <button type="submit">Post a comment</button>
+                                    </form>
+                                </div>
+                                
+                                
+                            </div>
+
+                            <a href="../CommunityPage/community.html" class="read-more">
+                                Go Back to Community Blog <ion-icon name="arrow-back"></ion-icon>
+                            </a>
+                    </article>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <aside class="sidebar">
+
+                    <div class="author-box fade-up">
+                        <img src="../IMAGE/SANTIAGO_IDPicture.jpg" alt="ChatGPT" class="profile-image">
+                        <h3>Kit Nicholas Santiago</h3>
+                        <p>2nd Year BSIT-MWA Student at National University Manila</p>
+                        <div class="review">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half">
+
+                            </ion-icon>
+                            <span> ( 5 Reviews )</span>
+
+                        </div>
+                        <p>Hello! I am Kit Nicholas Santiago. When I'm not immersed in my studies, I enjoy exploring the
+                            delicious offerings at Amber's. From our famous Pancit Malabon to our mouth-watering BBQ,
+                            Amber's has something for everyone. </p>
+
+                    </div>
+
+
+
+                    <div class="recent-posts slide-fade-up">
+                        <h3>Recent Posts</h3>
+                        <div class="post">
+                            <img src="../IMAGE/APPETIZER/Cheese Sticks.jpg" alt="Cheese Sticks">
+                            <div class="post-content">
+                                <p>Discover the crunchy delight of our Cheese Sticks, perfect for any occasion...</p>
+                                <span class="post-datee">June 26, 2023</span>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../IMAGE/PANCIT/Original Pancit Malabon.jpg" alt="Taco">
+                            <div class="post-content">
+                                <p>Enjoy the vibrant flavors of our classic Malabon, a true feast for the senses...</p>
+                                <span class="post-datee">July 3, 2023</span>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../IMAGE/PANCIT/Sotanghon Gui.jpg" alt="Pancit Malabon">
+                            <div class="post-content">
+                                <p>Savor the rich taste of Sotanghon Guisado, a Filipino favorite for generations...</p>
+                                <span class="post-datee">August 15, 2023</span>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../IMAGE/PORK/BBQ.jpg" alt="BBQ">
+                            <div class="post-content">
+                                <p>Indulge in our mouth-watering BBQ, grilled to perfection and full of flavor...</p>
+                                <span class="post-datee">September 10, 2023</span>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../IMAGE/BEEF/Roast Beef.jpg" alt="Buko Pandan">
+                            <div class="post-content">
+                                <p>End your meal with our refreshing Roast Beef, a sweet treat for the senses...</p>
+                                <span class="post-datee">October 5, 2023</span>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../IMAGE/DIMSUM/Siopao-Asado.jpg" alt="Halo Halo">
+                            <div class="post-content">
+                                <p>Cool down with our colorful Siopao Asado, a perfect mix of sweet and cold...</p>
+                                <span class="post-datee">November 20, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="filter-menu slide-fade-up">
+                        <h3>Filter By Menu</h3>
+                        <ul>
+                            <li>
+                                <img src="../IMAGE/APPETIZER/Hototay.jpg" alt="Chicken Fry">
+                                <span>Appetizers</span>
+                                <span class="count">(16)</span>
+                            </li>
+                            <li>
+                                <img src="../IMAGE/BEEF/Morcon.jpg" alt="Burger Food">
+                                <span>Beef</span>
+                                <span class="count">(6)</span>
+                            </li>
+                            <li>
+                                <img src="../IMAGE/CHICKEN/ChickenLollipop.jpg" alt="Pizza">
+                                <span>Chicken</span>
+                                <span class="count">(16)</span>
+                            </li>
+                            <li>
+                                <img src="../IMAGE/DESSERT/Pichi Niyog.jpg" alt="Fresh Fruits">
+                                <span>Desserts</span>
+                                <span class="count">(36)</span>
+                            </li>
+                            <li>
+                                <img src="../IMAGE/PANCIT/Canton.jpg" alt="Vegetables">
+                                <span>Pancit</span>
+                                <span class="count">(16)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="popular-tags slide-fade-up">
+                        <h3>Popular Tags</h3>
+                        <div class="tags">
+                            <a href="#">Pancit</a>
+                            <a href="#">Table</a>
+                            <a href="#">Chicken</a>
+                            <a href="#">Restaurant</a>
+                            <a href="#">Dish</a>
+                            <a href="#">Healthy</a>
+                            <a href="#">Fastfood</a>
+                            <a href="#">Food</a>
+                            <a href="#">Beef</a>
+                            <a href="#">Dessert</a>
+                            <a href="#">Chicken</a>
+                        </div>
+                    </div>
+
+
+                    <div class="photo-gallery slide-fade-up">
+                        <h3>Photo Gallery</h3>
+                        <div class="gallery">
+                            <div class="image-container">
+                                <img src="../IMAGE/LOGO/pichi.jpeg" alt="Gallery 1">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="../IMAGE/LOGO/lumpia.webp" alt="Gallery 2">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="../IMAGE/LOGO/images.jpeg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="../IMAGE/LOGO/PANCIT-MALABON_HEADER-1-1080x675.jpg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="../IMAGE/VEGETABLES/Fresh Ubod Lumpia.jpg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="../IMAGE/CHICKEN/Garlic Fried Chicken.jpg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="../IMAGE/FISH AND SEAFOOD/Sweet and Sour Fish.jpg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="../IMAGE/LOGO/PANCIT-MALABON_HEADER-1-1080x675.jpg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="../IMAGE/LOGO/images.jpeg" alt="Gallery 3">
+                                <div class="overlay">
+                                    <ion-icon name="eye"></ion-icon>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="follow-us slide-fade-up">
+                        <h3>Follow Us on</h3>
+                        <div class="social-icons">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+
+
+
+
+
+
+
+            <!-- I DONT PURPOSE -->
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn
+                style="opacity: 0.1; pointer-events: none; background-color: rgba(0, 0, 0, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+                <ion-icon name="radio-button-off"></ion-icon> </button>
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn
+                style="opacity: 0.1; pointer-events: none; background-color: rgba(255, 255, 255, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Catering</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>
+                    <ion-icon name="time-outline"></ion-icon>
+                    Opening Hours
+                </h3>
+                <ul>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon> Facebook</a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon> Instagram</a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon> Twitter</a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Amber.com.ph</p>
+                <p>09098-8888</p>
+                <p>8-88488</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Location</h3>
+                <img src="../asset/image/Maps.png" alt="Location Map">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../script.js"> </script>
+
+    <!--- ionicon link-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    </div>
+</body>
+
+</html>

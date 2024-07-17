@@ -1,0 +1,1569 @@
+.categories button {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.categories button.active {
+    background-color: #E61F2A; 
+    color: white; 
+}
+
+
+.banner {
+    text-align: center;
+    background: url('../asset/image/unsplash_3iexvMShGfQ.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 130px 0;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 3.8em;
+    left: 20px;
+    background-color: #E61F2A; 
+    margin-top: 5%;
+    padding: 25px 30px; 
+    display: inline-block; 
+    border-radius: 0px; 
+    position: relative; 
+}
+.banner h1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 585px; 
+    transform: translateY(-50%);
+    width: 75px; 
+    height: 160px; 
+    background-image: url('../asset/image/wing.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.banner h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -55px; 
+    transform: translateY(-50%);
+    width: 75px; 
+    height: 160px; 
+    background-image: url('../asset/image/right wing.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: #FFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+.categories button {
+    background-color: white;
+    border: 1px solid #E61F2B; 
+    color: #E61F2B;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+
+.categories button:hover {
+    background-color: #E61F2B;
+    color: white;
+    border-color: #E61F2B; 
+}
+
+
+
+.menu-section {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: flex-end; 
+}
+
+#garlic-fried-rice{
+    left: -85px;
+}
+
+#sotanghon-soup {
+    left: -92px;
+}
+
+#lomi-special {
+    left: -105px;
+}
+
+#plain-rice {
+    left: -118px;
+}
+
+.appetite-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 378px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.appetite-item img {
+    display: block; 
+    margin: 0 auto; 
+    height: 200px; 
+    width: 200px; 
+}
+
+.appetite-item:hover {
+    transform: scale(1.1); 
+}
+
+.appetite-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.appetite-item:hover h2,
+.appetite-item:hover p,
+.appetite-item:hover .price,
+.appetite-item:hover h1 {
+    color: white; 
+}
+.appetite-item h2 {
+    position: relative;
+    top: 20px;
+    right: 100px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding-right: 0px; 
+    margin-left: -175px;
+}
+
+.appetite-item h2::after {
+    content: "";
+    position: absolute;
+    left: 298px;
+    top: 230%;
+    transform: translateY(-50%);
+    width: 120px; 
+    height: 110px; 
+    background-image: url('../asset/image/star.png'); 
+    background-size: contain;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease;
+}
+.appetite-item:hover h2::after {
+    background-image: url('../asset/image/yellow star.png'); 
+    width: 120px;
+    height: 115px; 
+    top: 250%; 
+    right: 5px; 
+    transform: translateY(-50%);
+}
+.appetite-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+}
+
+.appetite-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; 
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.appetite-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.appetite-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.appetite-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.appetite-item:hover button::after {
+    background-image: url('../asset/image/red plus.png'); 
+}
+
+.appetite-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.appetite-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.appetite-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #000;
+    position: relative; 
+    top:40px; 
+    margin: 10px 0;
+    margin-right: 180px;
+}
+
+.bestseller {
+    position: absolute;
+    top: 185px; 
+    left: -2px; 
+    background-color: #E61F2B;
+    color: #fff;
+    width: 376px;
+    padding: 17px 140px; 
+    font-weight: bold;
+    font-size: 20px;
+    transform: rotate(0deg);
+    transform-origin: left top;
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0x; 
+    border-bottom-left-radius: -5px; 
+    border-bottom-right-radius: -5px; 
+    overflow: hidden;  
+}
+
+.bestseller::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background-color: inherit;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    z-index: -1; 
+}
+
+
+.appetite-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B;
+}
+
+.appetite-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.appetite-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    border: 1px solid #E61F2B;
+    background-color: white;
+    color: #E61F2B;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #E61F2B;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #E61F2B;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.beef-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 378px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.beef-item:hover {
+    transform: scale(1.1); 
+}
+.beef-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.beef-item:hover h2,
+.beef-item:hover p,
+.beef-item:hover .price,
+.beef-item:hover h1 {
+    color: white; 
+}
+
+
+
+.beef-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.beef-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.beef-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.beef-item:hover button::after {
+    background-image: url('../asset/image/red plus.png'); 
+}
+
+
+.beef-item img {
+    display: block; 
+    margin: 0 auto; 
+    height: 200px; 
+    width: 200px; 
+}
+
+.beef-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.beef-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    margin-left: 5%;
+    color: black;
+    text-align: center;
+}
+
+
+.beef-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.beef-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.beef-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.chicken-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 378px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.chicken-item:hover {
+    transform: scale(1.1); 
+}
+
+.chicken-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.chicken-item:hover h2,
+.chicken-item:hover p,
+.chicken-item:hover .price,
+.chicken-item:hover h1 {
+    color: white; 
+}
+
+.chicken-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.chicken-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.chicken-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.chicken-item:hover button::after {
+    background-image: url('../asset/image/red plus.png'); 
+}
+
+.chicken-item img {
+    display: block; 
+    margin: 0 auto; 
+    height: 200px; 
+    width: 200px; 
+}
+
+.chicken-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.chicken-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    margin-left: 5%;
+    color: black;
+    text-align: center;
+}
+
+
+.chicken-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.chicken-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.chicken-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dessert-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 378px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.dessert-item:hover {
+    transform: scale(1.1); 
+}
+.dessert-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.dessert-item:hover h2,
+.dessert-item:hover p,
+.dessert-item:hover .price,
+.dessert-item:hover h1 {
+    color: white; 
+}
+
+.dessert-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.dessert-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.dessert-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.dessert-item:hover button::after {
+    background-image: url('../asset/image/red plus.png'); 
+}
+
+
+.dessert-item img {
+    display: block; 
+    margin: 0 auto; 
+    height: 200px; 
+    width: 200px; 
+}
+
+
+.dessert-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.dessert-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    margin-left: 5%;
+    color: black;
+    text-align: center;
+}
+
+.dessert-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B;
+}
+
+.dessert-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.dessert-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dimsum-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 4008px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.dimsum-item:hover {
+    transform: scale(1.1); 
+}
+.dimsum-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.dimsum-item:hover h2,
+.dimsum-item:hover p,
+.dimsum-item:hover .price,
+.dimsum-item:hover h1 {
+    color: white; 
+}
+
+.dimsum-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.dimsum-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.dimsum-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease;
+}
+
+.dimsum-item:hover button::after {
+    background-image: url('../asset/image/red plus.png'); 
+}
+.dimsum-item img {
+    display: block; 
+    margin: 0 auto; 
+    height: 200px; 
+    width: 200px; 
+}
+
+.dimsum-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.dimsum-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    margin-left: 5%;
+    color: black;
+    text-align: center;
+}
+
+
+.dimsum-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.dimsum-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.dimsum-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dimsum-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 328px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+}
+
+.dimsum-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.dimsum-item:hover h2,
+.dimsum-item:hover p,
+.dimsum-item:hover .price,
+.dimsum-item:hover h1 {
+    color: white; 
+}
+
+.dimsum-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.dimsum-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.dimsum-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.dimsum-item:hover button::after {
+    background-image: url('asset/image/red plus.png'); 
+}
+
+.dimsum-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.dimsum-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.dimsum-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+.dimsum-item:hover .bestseller {
+    background-color: white;
+    color: #E61F2B; 
+}
+
+.dimsum-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.dimsum-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fish-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 328px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease; 
+}
+
+.fish-item:hover {
+    transform: scale(1.1); 
+}
+.fish-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.fish-item:hover h2,
+.fish-item:hover p,
+.fish-item:hover .price,
+.fish-item:hover h1 {
+    color: white; 
+}
+
+.fish-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.fish-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.fish-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.fish-item:hover button::after {
+    background-image: url('asset/image/red plus.png'); 
+}
+
+.fish-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.fish-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.fish-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+
+.fish-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.fish-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.fish-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pancit-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 328px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.pancit-item:hover {
+    transform: scale(1.1); 
+}
+
+.pancit-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.pancit-item:hover h2,
+.pancit-item:hover p,
+.pancit-item:hover .price,
+.pancit-item:hover h1 {
+    color: white; 
+}
+
+.pancit-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.pancit-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.pancit-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.pancit-item:hover button::after {
+    background-image: url('asset/image/red plus.png'); 
+}
+
+.pancit-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.pancit-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.pancit-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+.pancit-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.pancit-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.pancit-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.promo-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 328px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.promo-item:hover {
+    transform: scale(1.1); 
+}
+.promo-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.promo-item:hover h2,
+.promo-item:hover p,
+.promo-item:hover .price,
+.promo-item:hover h1 {
+    color: white; 
+}
+
+.promo-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.promo-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.promo-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.promo-item:hover button::after {
+    background-image: url('../asset/image/red plus.png'); 
+}
+
+.promo-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.promo-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.promo-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+.promo-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.promo-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.promo-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Vegetables-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 328px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.Vegetables-item:hover {
+    transform: scale(1.1); 
+}
+
+.Vegetables-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.Vegetables-item:hover h2,
+.Vegetables-item:hover p,
+.Vegetables-item:hover .price,
+.Vegetables-item:hover h1 {
+    color: white; 
+}
+
+.Vegetables-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease;  
+}
+
+.Vegetables-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.Vegetables-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.Vegetables-item:hover button::after {
+    background-image: url('asset/image/red plus.png'); 
+}
+
+.Vegetables-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.Vegetables-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.Vegetables-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+.Vegetables-item:hover .bestseller {
+    background-color: white; 
+    color: #E61F2B; 
+}
+
+.Vegetables-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.Vegetables-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pork-item {
+    border: 2px solid #E61F2B;
+    border-radius: 50px;
+    width: 328px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: transform 0.3s ease; 
+}
+
+.pork-item:hover {
+    transform: scale(1.1); 
+}
+.pork-item:hover {
+    box-shadow: 0 4px 8px rgba(230, 31, 43, 0.5); 
+    background-color: #E61F2B; 
+}
+
+.pork-item:hover h2,
+.pork-item:hover p,
+.pork-item:hover .price,
+.pork-item:hover h1 {
+    color: white; 
+}
+
+.pork-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px; 
+    padding-right: 40px; 
+    transition: background-color 0.9s ease, color 0.9s ease; 
+}
+
+.pork-item:hover button {
+    background-color: white; 
+    color: black; 
+}
+
+.pork-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 0.9s ease; 
+}
+
+.pork-item:hover button::after {
+    background-image: url('asset/image/red plus.png'); 
+}
+
+.pork-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.pork-item h2 {
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.pork-item p {
+    position: relative;
+    top: 18px;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+}
+
+.pork-item:hover .bestseller {
+    background-color: white;
+    color: #E61F2B; 
+}
+
+.pork-item button {
+    background-color: #E61F2A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 180px;
+    padding-right: 40px;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.pork-item button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('asset/image/Subtract.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

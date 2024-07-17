@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ambers Food Website</title>
+    
+    
+        <link rel="stylesheet" href="Contact.css">
+        <link rel="stylesheet" href="../index.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+    
+        <!-- icons -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    
+    </head>
+<body>
+  
+    <header class="header" data-header>
+
+        <nav class="navbar visible">
+            <div class="navbar-wrapper">
+                <a href="#" class="logo">
+                    <img src="../IMAGE/LOGO/amber-logo.png" alt="logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="../index.html" class="nav-link">Home</a>
+
+                    <li>
+                        <a href="../AboutUsPage/About.html" class="nav-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="../OurMenuPage/menu.html" class="nav-link">Our Menu</a>
+                    </li>
+                    <li>
+                        <a href="../CommunityPage/community.html" class="nav-link">Community</a>
+                    </li>
+                    <li class="active">
+                        <a href="Contact.html" class="nav-link">Contact</a>
+                    </li>
+                    </li>
+                </ul>
+
+
+
+                <!-- Sign Up Form Pane -->
+
+                <div class="navbar-btn-group">
+                    <button class="shopping-cart-btn2">
+                        <img src="../IMAGE/LOGO/image%203.png" alt="shopping cart icon" width="40"
+                            style="margin-left: 20px;">
+                    </button>
+                    <button class="menu-toggle-btn"></button>
+                </div>
+
+                <div class="sign-up-pane" id="create-account-pane">
+                    <div class="sign-up-box">
+                        <img src="../IMAGE/LOGO/amber-logo.png" alt="Amber Logo" width="150">
+                        <form class="sign-up-form" id="create-account-form">
+                            <h4>Create your Account</h4>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <div class="input-container">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <div class="input-container">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-container">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile Number</label>
+                                <div class="input-container">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <input type="text" id="mobile" name="mobile" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-container">
+                                    <ion-icon name="eye"></ion-icon>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password">Confirm Password</label>
+                                <div class="input-container">
+                                    <ion-icon name="eye-off"></ion-icon>
+                                    <input type="password" id="confirm_password" name="confirm_password" required>
+                                </div>
+                            </div>
+
+                            <button type="button" class="custom-btn3" onclick="showWelcomeBackPane()">
+                                <span class="text text-1">Sign In</span>
+                                <span class="text text-2" aria-hidden="true">Sign In</span>
+                            </button>
+
+
+                            <div class="alternative-signup">
+                                <button class="btn btn-google">
+                                    <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="sign-up-pane" id="welcome-back-pane">
+                    <div class="sign-up-box">
+                        <div class="sign-header">
+
+                            <button onclick="showCreateAccountPane()">←</button>
+                            <h2>Welcome back!</h2>
+                        </div>
+                        <form class="sign-up-form" id="sign-in-form">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <div class="input-container">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-container">
+                                    <ion-icon name="eye-off"></ion-icon>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                            </div>
+
+                            <button type="button" class="custom-btn3" onclick="signIn()">
+                                <span class="text text-1">Log In</span>
+                                <span class="text text-2" aria-hidden="true">Log In</span>
+                            </button>
+
+                            <div class="alternative-signup">
+                                <button class="btn btn-google">
+                                    <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                </button>
+
+
+                                <p>Don’t have an account?</p>
+                                <p>
+                                    Forgot your password?
+                                </p>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- VIEW YOUR CART------->
+
+
+                <button class="shopping-cart-btn">
+                    <img src="../IMAGE/LOGO/Group%20242-2.jpg" alt="shopping cart icon" width="53">
+                </button>
+
+                <button class="menu-toggle-btn">
+
+                </button>
+
+            </div>
+
+        </nav>
+
+        <div class="cart-box">
+            <div class="cart-header">
+                <button onclick="goBack()">←</button>
+                <h2>Your cart</h2>
+            </div>
+
+
+            <div class="cart-empty" id="cart-empty">
+                <img src="../IMAGE/LOGO/yourcart.png" alt="Cart Image">
+
+                <h4>Hungry?</h4>
+                <p>You haven't added anything to your cart!</p>
+                <button onclick="addItem()">Add one</button>
+            </div>
+
+            <div class="cart-filled" id="cart-filled" style="display: none;">
+                <div class="cart-itemm">
+
+                    <img src="../IMAGE/REMOVEBG/image 27.png" alt="Hotatay Soup">
+                    <div>
+                        <h3>Hotatay soup</h3>
+                        <p>Delight in the savory goodness of our Hotatay Soup, a rich and hearty blend of fresh
+                            ingredients. Perfectly crafted to warm your soul </p>
+                    </div>
+
+                    <select class="select-red">
+                        <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                    </select>
+                </div>
+
+                <div class="cart-itemm">
+
+                    <img src="../IMAGE/REMOVEBG/Pancit_trio-removebg-preview.png" alt="Hotatay Soup">
+                    <div>
+                        <h3>Original Pancit Trio </h3>
+                        <p>Choose any three combinations from our wide selection, including classics like Canton,
+                            Bihon, Miki, Sotanghon, and even Spaghetti.</p>
+                    </div>
+
+                    <select class="select-red">
+                        <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                    </select>
+
+                </div>
+
+                <div class="cart-itemm">
+
+                    <img src="../IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" alt="Hotatay Soup">
+                    <div>
+                        <h3>Buttered Fried Chicken</h3>
+                        <p>Each bite offers a crispy exterior and a juicy, flavorful interior, all enhanced by a
+                            rich buttery finish that makes this dish simply irresistible.</p>
+                    </div>
+
+                    <select class="select-red">
+                        <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                    </select>
+
+
+                </div>
+
+
+                <div class="cart-btn-group">
+                    <div class="summary-row">
+                        <p class="summary-label"><strong>Subtotal:</strong></p>
+                        <p class="summary-price">₱1,400.00</p>
+                    </div>
+                    <div class="summary-row">
+                        <p class="summary-label">Standard delivery:</p>
+                        <p class="summary-price">₱59.00</p>
+                    </div>
+
+                    <a href="../CheckoutPage/checkout.html" class="review-button">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                        Review payment and address
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="contact-section">
+            <div class="contact-banner">
+                <h1><span>Contact Us</span>
+                </h1>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>At Amber's Philippines, we value our customers and strive to provide exceptional service. Whether you have questions about our menu, need assistance with an order, or simply want to share your feedback, we're here to help. Reach out to us through any of the following methods, and we'll get back to you promptly.</p>
+                    <p><img src="../asset/image/Contactuss/Location (1).png" alt="Location Icon"> 123 Amber Street, Manila, Metro Manila, Philippines</p>
+                    <p><img src="../asset/image/Contactuss/mail.png" alt="Email Icon"> contact@ambersphilippines.com</p>
+                    <p><img src="../asset/image/Contactuss/Contact Us.png" alt="Phone Icon"> +63 2 1234 5678</p>
+                    
+                </div>
+                
+                
+                <div class="contact-form">
+                    <h2>Email Us</h2>
+                    <form>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <input type="tel" name="phone" placeholder="Phone">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map-location">
+            <h2>Our Map Location</h2>
+            <div class="maps">
+                <div class="maps1">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn
+        style="opacity: 0.1; pointer-events: none; background-color: rgba(0, 0, 0, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+        <ion-icon name="radio-button-off"></ion-icon> </button>
+    <button class="slider-btn next" aria-label="slide to next" data-next-btn
+        style="opacity: 0.1; pointer-events: none; background-color: rgba(255, 255, 255, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+    </button>
+
+
+    </main>
+
+
+
+    
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Catering</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>
+                    <ion-icon name="time-outline"></ion-icon>
+                    Opening Hours
+                </h3>
+                <ul>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon> Facebook</a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon> Instagram</a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon> Twitter</a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Amber.com.ph</p>
+                <p>09098-8888</p>
+                <p>8-88488</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Location</h3>
+                <img src="../asset/image/Maps.png" alt="Location Map">
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartPane" style="display: none; width: 576px; height: 1114px; background-color: #f0f0f0;">
+    </div>
+
+    <!-- custom js link  -->
+
+    <script src="../script.js"> </script>
+
+    <!--- ionicon link-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambers Food Website</title>
+
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../index.css">
+
+
+    <link rel="stylesheet" href="/CommunityPage/community.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <header class="header" data-header>
+
+        <nav class="navbar visible">
+            <div class="navbar-wrapper">
+                <a href="#" class="logo">
+                    <img src="../IMAGE/LOGO/amber-logo.png" alt="logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="../index.html" class="nav-link">Home</a>
+
+                    <li>
+                        <a href="../AboutUsPage/About.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="active">
+                        <a href="menu.html" class="nav-link">Our Menu</a>
+                    </li>
+                    <li>
+                        <a href="../CommunityPage/community.html" class="nav-link">Community</a>
+                    </li>
+                    <li>
+                        <a href="../Contact/Contact.html" class="nav-link">Contact</a>
+                    </li>
+                    </li>
+                
+                </ul>
+
+
+
+                <!-- Sign Up Form Pane -->
+
+                <div class="navbar-btn-group">
+                    <button class="shopping-cart-btn2">
+                        <img src="../IMAGE/LOGO/image%203.png" alt="shopping cart icon" width="40"
+                            style="margin-left: 20px;">
+                    </button>
+                    <button class="menu-toggle-btn"></button>
+                </div>
+
+                <div class="sign-up-pane" id="create-account-pane">
+                    <div class="sign-up-box">
+                        <img src="../IMAGE/LOGO/amber-logo.png" alt="Amber Logo" width="150">
+                        <form class="sign-up-form" id="create-account-form">
+                            <h4>Create your Account</h4>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <div class="input-container">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <div class="input-container">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-container">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile Number</label>
+                                <div class="input-container">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <input type="text" id="mobile" name="mobile" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-container">
+                                    <ion-icon name="eye"></ion-icon>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password">Confirm Password</label>
+                                <div class="input-container">
+                                    <ion-icon name="eye-off"></ion-icon>
+                                    <input type="password" id="confirm_password" name="confirm_password" required>
+                                </div>
+                            </div>
+
+                            <button type="button" class="custom-btn3" onclick="showWelcomeBackPane()">
+                                <span class="text text-1">Sign In</span>
+                                <span class="text text-2" aria-hidden="true">Sign In</span>
+                            </button>
+
+
+                            <div class="alternative-signup">
+                                <button class="btn btn-google">
+                                    <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="sign-up-pane" id="welcome-back-pane">
+                    <div class="sign-up-box">
+                        <div class="sign-header">
+
+                            <button onclick="showCreateAccountPane()">←</button>
+                            <h2>Welcome back!</h2>
+                        </div>
+                        <form class="sign-up-form" id="sign-in-form">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <div class="input-container">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-container">
+                                    <ion-icon name="eye-off"></ion-icon>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                            </div>
+
+                            <button type="button" class="custom-btn3" onclick="signIn()">
+                                <span class="text text-1">Log In</span>
+                                <span class="text text-2" aria-hidden="true">Log In</span>
+                            </button>
+
+                            <div class="alternative-signup">
+                                <button class="btn btn-google">
+                                    <ion-icon name="logo-google"></ion-icon> Sign up with Google
+                                </button>
+
+
+                                <p>Don’t have an account?</p>
+                                <p>
+                                    Forgot your password?
+                                </p>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- VIEW YOUR CART------->
+
+
+                <button class="shopping-cart-btn">
+                    <img src="../IMAGE/LOGO/Group%20242-2.jpg" alt="shopping cart icon" width="53">
+                </button>
+
+                <button class="menu-toggle-btn">
+
+                </button>
+
+            </div>
+
+        </nav>
+
+        <div class="cart-box">
+            <div class="cart-header">
+                <button onclick="goBack()">←</button>
+                <h2>Your cart</h2>
+            </div>
+
+
+            <div class="cart-empty" id="cart-empty">
+                <img src="../IMAGE/LOGO/yourcart.png" alt="Cart Image">
+
+                <h4>Hungry?</h4>
+                <p>You haven't added anything to your cart!</p>
+                <button onclick="addItem()">Add one</button>
+            </div>
+
+            <div class="cart-filled" id="cart-filled" style="display: none;">
+                <div class="cart-itemm">
+
+                    <img src="../IMAGE/REMOVEBG/image 27.png" alt="Hotatay Soup">
+                    <div>
+                        <h3>Hotatay soup</h3>
+                        <p>Delight in the savory goodness of our Hotatay Soup, a rich and hearty blend of fresh
+                            ingredients. Perfectly crafted to warm your soul </p>
+                    </div>
+
+                    <select class="select-red">
+                        <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                    </select>
+                </div>
+
+                <div class="cart-itemm">
+
+                    <img src="../IMAGE/REMOVEBG/Pancit_trio-removebg-preview.png" alt="Hotatay Soup">
+                    <div>
+                        <h3>Original Pancit Trio </h3>
+                        <p>Choose any three combinations from our wide selection, including classics like Canton,
+                            Bihon, Miki, Sotanghon, and even Spaghetti.</p>
+                    </div>
+
+                    <select class="select-red">
+                        <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                    </select>
+
+                </div>
+
+                <div class="cart-itemm">
+
+                    <img src="../IMAGE/REMOVEBG/Buttered_Fried_Chicken-removebg-preview.png" alt="Hotatay Soup">
+                    <div>
+                        <h3>Buttered Fried Chicken</h3>
+                        <p>Each bite offers a crispy exterior and a juicy, flavorful interior, all enhanced by a
+                            rich buttery finish that makes this dish simply irresistible.</p>
+                    </div>
+
+                    <select class="select-red">
+                        <option value="1">&nbsp; &nbsp; &nbsp;1</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;2</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;3</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;4</option>
+                        <option value="1">&nbsp; &nbsp; &nbsp;5</option>
+                    </select>
+
+
+                </div>
+
+
+                <div class="cart-btn-group">
+                    <div class="summary-row">
+                        <p class="summary-label"><strong>Subtotal:</strong></p>
+                        <p class="summary-price">₱1,400.00</p>
+                    </div>
+                    <div class="summary-row">
+                        <p class="summary-label">Standard delivery:</p>
+                        <p class="summary-price">₱59.00</p>
+                    </div>
+
+                    <a href="../CheckoutPage/checkout.html" class="review-button">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                        Review payment and address
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <main>
+        <section class="banner">
+            <div class="menu-title">
+                <div class="menu-title-background"></div>
+                <h1>Explore Our Menu</h1>
+            </div>
+        </section>
+        <section class="categories">
+            <button class="active" onclick="showCategory('appetite')" value="appetite">Appetite</button>
+            <button onclick="showCategory('beef')" value="beef">Beef</button>
+            <button onclick="showCategory('chicken')" value="chicken">Chicken</button>
+            <button onclick="showCategory('dessert')" value="dessert">Dessert</button>
+            <button onclick="showCategory('dimsum')" value="dimsum">Dimsum</button>
+            <button onclick="showCategory('fish')" value="fish">Fish & Seafood</button>
+            <button onclick="showCategory('pancit')" value="pancit">Pancit</button>
+            <button onclick="showCategory('promo')" value="promo">Promo</button>
+            <button onclick="showCategory('vegetables')" value="vegetables">Vegetables</button>
+            <button onclick="showCategory('pork')" value="pork">Pork</button>
+            <div class="dropdown">
+                <button class="dropbtn">▼</button>
+                <div class="dropdown-content">
+                    <a href="/IMAGE.zip" download>Download Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="appetite">
+
+            <div class="appetite-item">
+                <div class="bestseller">Bestseller</div>
+                <img src="../asset/image/Cheese Sticks 1.png" alt="Cheese Sticks">
+                <h2>Cheese Sticks</h2>
+                <p>Crispy cheese sticks served with a side of marinara sauce.</p>
+                <div class="price">PHP 1,400</div>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <div class="appetite-item">
+                <img src="../asset/image/Gralic Fired Chicken.png" alt="Garlic Fried Rice">
+                
+                <h2 id="garlic-fried-rice">Garlic Fried Rice</h2>
+                <p>Flavorful fried rice with aromatic garlic and scallions.</p>
+                <div class="price">PHP 1,400</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="appetite-item">
+                <img src="../asset/image/Hotatay soup.png" alt="Hotatay Soup">
+                <h2 id="hotatay-soup">Hotatay Soup</h2>
+                <p>Hot and sour soup with tofu, mushrooms, and bamboo shoots.</p>
+                <div class="price">PHP 1,400</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="appetite-item">
+                <img src="../asset/image/Sotanghon Sooup.png" alt="Sotanghon Soup">
+                <h2 id="sotanghon-soup">Sotanghon Soup</h2>
+                <p>Clear noodle soup with vegetables and chicken.</p>
+                <div class="price">PHP 1,400</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="appetite-item">
+                <div class="bestseller">Bestseller</div>
+                <img src="../asset/image/Lomi Special.png" alt="Lomi Special">
+                <h2 id="lomi-special">Lomi Special</h2>
+                <p>Thick egg noodles in a savory broth with pork and vegetables.</p>
+                <div class="price">PHP 1,400</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="appetite-item">
+                <img src="../asset/image/Plain Rice.png" alt="Plain Rice">
+                <h2 id="plain-rice">Plain Rice</h2>
+                <p>Steamed white rice, perfect as a side to any dish.</p>
+                <div class="price">PHP 1,400</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="beef">
+            <div class="beef-item">
+                <img src="../asset/image/BEEF/Morcon.jpg">
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Beef Steak</h2>
+                <p>Juicy beef steak cooked to perfection, served with a savory sauce.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="beef-item">
+                <img src="../asset/image/BEEF/Ox tripe.jpg">
+                <h2>Beef Caldereta</h2>
+                <p>Rich and flavorful beef caldereta with vegetables in a tomato sauce.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="beef-item">
+                <img src="../asset/image/BEEF/Roast Beef.jpg" >
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Beef Kare Kare</h2>
+                <p>Traditional beef kare kare with a creamy peanut sauce.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="chicken">
+            <div class="chicken-item">
+                <img src="../asset/image/CHICKEN/BS1-5.jpg " >
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Flavored Chicken</h2>
+                <p>Tender chicken pieces in your choice of flavorful marinades.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chicken-item">
+                <img src="../asset/image/CHICKEN/Buttered Fried Chicken.jpg">
+                <h2>Buttered Fried Chicken</h2>
+                <p>Crispy fried chicken with a buttery flavor.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chicken-item">
+                <img src="../asset/image/CHICKEN/ChickenLollipop.jpg" >
+                <h2>Chicken Lollipop</h2>
+                <p>Fun and tasty chicken lollipop, perfect for kids.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chicken-item">
+                <img src="../asset/image/CHICKEN/Garlic Fried Chicken.jpg">
+
+                <h2>Garlic Fried Chicken</h2>
+                <p>Crispy chicken fried with a generous amount of garlic.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chicken-item">
+                <img src="../asset/image/CHICKEN/Golden Fried Chicken Drumstick.jpg">
+                <h2>Golden Fried Chicken</h2>
+                <p>Classic golden fried chicken drumsticks.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chicken-item">
+                <img src="../asset/image/CHICKEN/WIng.jpg">
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Crispy Chicken Wings</h2>
+                <p>Perfectly fried chicken wings, crispy on the outside and juicy on the inside.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="dessert">
+            <div class="dessert-item">
+                <img src="../asset/image/DESSERT/Buchi.jpg" alt="Buchi">
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Buchi</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dessert-item">
+                <img src="../asset/image/DESSERT/Pichi Cheese.jpg" alt="Pichi Cheese">
+                <h2>Pichi Cheese</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dessert-item">
+                <img src="../asset/image/DESSERT/Pichi Niyog.jpg" alt="Pichi Fresh Coconut">
+                <h2>Pichi Fresh Coconut</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dessert-item">
+                <img src="../asset/image/DESSERT/PPP.jpg" alt="Pandan Pichi">
+                <h2>Pandan Pichi</h2>
+                <p>Refreshing pandan-flavored pichi-pichi.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dessert-item">
+                <img src="../asset/image/DESSERT/Puto Chees.jpg" alt="Puto">
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Puto</h2>
+                <p>Steamed rice cakes topped with cheese.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dessert-item">
+                <img src="../asset/image/DESSERT/TURON.jpg" alt="Turon">
+                <div class="bestseller">Bestseller</div>
+
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="dimsum">
+            <div class="dimsum-item">
+                <img src="../asset/image/DIMSUM/BOLA-BOLA.jpg" alt="Buchi">
+                <h2>Buchi</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dimsum-item">
+                <img src="../asset/image/DIMSUM/Siomai.jpg" alt="Pichi Cheese">
+                <h2>Pichi Cheese</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="dimsum-item">
+                <img src="../asset/image/DIMSUM/Siopao-Asado.jpg" alt="Pichi Fresh Coconut">
+                <h2>Pichi Fresh Coconut</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="fish">
+            <div class="fish-item">
+                <img src="../asset/image/FISH AND SEAFOOD/Calamares.jpg" alt="Buchi">
+                <h2>Calamares</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fish-item">
+                <img src="../asset/image/FISH AND SEAFOOD/Fish Fillet Tar Tar.jpg" alt="Pichi Cheese">
+                <h2>Fish Fillet Tartar Sauce</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fish-item">
+                <img src="../asset/image/FISH AND SEAFOOD/Sweet and Sour Fish.jpg" alt="Pichi Fresh Coconut">
+                <h2>Sweet & Sour Fish Fillet</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="pancit">
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Bihon Guisado Top 0182.jpg" alt="Buchi">
+                <h2>Buchi</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Bihon.jpg" alt="Pichi Cheese">
+                <h2>Pichi Cheese</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Canton-bihon.jpg" alt="Pichi Fresh Coconut">
+                <h2>Pichi Fresh Coconut</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="asset/image/PANCIT/Canton.jpg" alt="Pandan Pichi">
+                <h2>Pandan Pichi</h2>
+                <p>Refreshing pandan-flavored pichi-pichi.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Original Pancit Malabon.jpg" alt="Puto">
+                <h2>Puto</h2>
+                <p>Steamed rice cakes topped with cheese.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Pancit trio.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Pansit Puti.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Pasta_Carbonara.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/PNCT-12.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Seafood Pasta.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Sotanghon Gui.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/spaghetti.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pancit-item">
+                <img src="../asset/image/PANCIT/Spicy oriental.jpg" alt="Turon">
+                <h2>Turon</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="promo">
+            <div class="promo-item">
+                <img src="../asset/image/PROMO/ASADO PLATTER.jpg" alt="Buchi">
+                <h2>Buchi</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="promo-item">
+                <img src="../asset/image/PROMO/BOLA-BOLA PLATTER.jpg" alt="Pichi Cheese">
+                <h2>Pichi Cheese</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="promo-item">
+                <img src="../asset/image/PROMO/combi platter.jpg" alt="Pichi Fresh Coconut">
+                <h2>Pichi Fresh Coconut</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-section" id="vegetables">
+            <div class="Vegetables-item">
+                <img src="../asset/image/DESSERT/Buchi.jpg" alt="Buchi">
+                <h2>Buchi</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="Vegetables-item">
+                <img src="../asset/image/VEGETABLES/Assorted Veg Egg.jpg" alt="Pichi Cheese">
+                <h2>Pichi Cheese</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="Vegetables-item">
+                <img src="../asset/image/VEGETABLES/Chopsuey.jpg" alt="Pichi Fresh Coconut">
+                <h2>Pichi Fresh Coconut</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="Vegetables-item">
+                <img src="../asset/image/VEGETABLES/Fresh Ubod Lumpia.jpg" alt="Pandan Pichi">
+                <h2>Pandan Pichi</h2>
+                <p>Refreshing pandan-flavored pichi-pichi.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="Vegetables-item">
+                <img src="../asset/image/VEGETABLES/Fried lumpiang shanghai.jpg" alt="Puto">
+                <h2>Puto</h2>
+                <p>Steamed rice cakes topped with cheese.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="menu-section" id="pork">
+            <div class="pork-item">
+                <img src="../asset/image/PORK/BBQ.jpg" alt="Buchi">
+                <h2>Buchi</h2>
+                <p>Sweet rice balls with a delicious filling.</p>
+                <div class="price">PHP 1,500</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pork-item">
+                <img src="../asset/image/PORK/Chicharon Bulaklak.jpg" alt="Pichi Cheese">
+                <h2>Pichi Cheese</h2>
+                <p>Soft and chewy pichi-pichi topped with grated cheese.</p>
+                <div class="price">PHP 1,600</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pork-item">
+                <img src="asset/image/PORK/Crispy Pata.jpg" alt="Pichi Fresh Coconut">
+                <h2>Pichi Fresh Coconut</h2>
+                <p>Traditional pichi-pichi with fresh coconut flakes.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pork-item">
+                <img src="asset/image/PORK/Fried Lumpiang Shanghai.jpg" alt="Pandan Pichi">
+                <h2>Pandan Pichi</h2>
+                <p>Refreshing pandan-flavored pichi-pichi.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pork-item">
+                <img src="asset/image/PORK/Lechon Kawali.jpg" alt="Puto">
+                <h2>Puto</h2>
+                <p>Steamed rice cakes topped with cheese.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pork-item">
+                <img src="asset/image/PORK/Sisig.jpg" alt="Turon">
+                <h2>Sisig Bagnet</h2>
+                <p>Sweet banana spring rolls, a favorite Filipino snack.</p>
+                <div class="price">PHP 1,700</div>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn
+            style="opacity: 0.1; pointer-events: none; background-color: rgba(0, 0, 0, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+            <ion-icon name="radio-button-off"></ion-icon> </button>
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn
+            style="opacity: 0.1; pointer-events: none; background-color: rgba(255, 255, 255, 0.1); border: none; cursor: default; padding: 10px; border-radius: 5px;">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+
+
+    </main>
+
+
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Catering</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>
+                    <ion-icon name="time-outline"></ion-icon>
+                    Opening Hours
+                </h3>
+                <ul>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon> Facebook</a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon> Instagram</a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon> Twitter</a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Amber.com.ph</p>
+                <p>09098-8888</p>
+                <p>8-88488</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Location</h3>
+                <img src="../asset/image/Maps.png" alt="Location Map">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div id="cartPane" style="display: none; width: 576px; height: 1114px; background-color: #f0f0f0;">
+    </div>
+
+    <!-- custom js link  -->
+
+    <script src="../script.js"> </script>
+
+    <!--- ionicon link-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
